@@ -24,7 +24,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html')
     })
-  ].filter(Boolean),
+  ].filter(item => item === false),
   module: {
     rules: [
       {
